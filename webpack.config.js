@@ -3,13 +3,16 @@ var webpack = require('webpack');
 var ExtractTextPlugin=require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    './src/app.tsx'
-  ],
+  entry: {
+    app: [
+      'webpack-dev-server/client?http://localhost:3000',
+      './src/app.tsx'
+    ],
+    admin_app: './src/admin_app.tsx'
+  },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     publicPath: '/dist/'
   },
   resolve: {
