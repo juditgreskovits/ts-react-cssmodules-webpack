@@ -1,5 +1,7 @@
 # ts-react-cssmodules-webpack
 
-$ npm install 
-$ tsd install 
+$ npm install
+
+$ tsd install
+
 $ npm start 
