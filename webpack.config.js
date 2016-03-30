@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     app: [
       'webpack-dev-server/client?http://localhost:3000',
+      'webpack/hot/dev-server',
       './src/app.tsx'
     ],
     admin_app: './src/admin_app.tsx'

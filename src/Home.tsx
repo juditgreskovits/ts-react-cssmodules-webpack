@@ -8,7 +8,7 @@ export default class Home extends React.Component<{extra?: string}, {}> {
       console.log('styles = ', styles);
 
         return  <div>
-                    <h1 className={styles.red}>App</h1>
+                    <h1 className={styles.red}>App meow meow</h1>
                     <h2 className={styles.blue}>Blue</h2>
                     {this.props.extra}
                 </div>;
